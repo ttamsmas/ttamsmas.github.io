@@ -1,1 +1,56 @@
+body {
+  background: #575757;
+  color: #FFFFFF;
+  font-family: "Libre Franklin", sans-serif;
+}
 
+#nav {
+  display: flex;
+  justify-content: space-between;
+  background: #147297;
+  align-items: center;
+}
+
+#projectheader {
+  color: #147297;
+  background: #FFFFFF;
+  display: block;
+}
+
+h1 {
+  color: #000000;
+  font-family: "Shrikhand", cursive;
+  text-shadow: 2px 2px 1px #5895AD;
+  padding: 0 0 0 3px;
+}
+
+h3 {
+  color: #000000;
+  background: #5895AD;
+  border-radius: 30px;
+  display: inline;
+  padding: 1px;
+}
+
+div {
+  display: flex;
+}
+
+button {
+  border-radius: 16px;
+  font-size: 25px;
+  width: 30%;
+  color: #FFFFFF;
+}
+
+img {
+  height: 2em;
+  margin: 0.5em;
+  justify-content: flex-end;
+}
+
+.highlight2 {
+  background: #6DAEDD;
+}
+
+/*# sourceMappingURL=main.css.map */
