@@ -1,0 +1,63 @@
+$primary-font: 'Libre Franklin', sans-serif;
+$secondary-font:'Shrikhand', cursive;
+$primary-color: #575757;
+$secondary-color: #147297;
+$highlight-color-1: #5895AD;
+$highlight-color-2: #6DAEDD;
+$font-color: #FFFFFF;
+$font-dark: #000000;
+
+body {
+  background: $primary-color;
+  color: $font-color;
+  font-family: $primary-font;
+}
+
+#nav {
+  display: flex;
+  justify-content: space-between;
+  background: $secondary-color;
+  align-items: center;
+}
+
+#projectheader {
+  color: $secondary-color;
+  background: $font-color;
+  display: block;
+}
+
+h1 {
+  color: $font-dark;
+  font-family: $secondary-font;
+  text-shadow: 2px 2px 1px $highlight-color-1;
+  padding: 0 0 0 3px;
+}
+
+h3 {
+  color: $font-dark;
+  background: $highlight-color-1;
+  border-radius: 30px;
+  display: inline;
+  padding: 1px;
+}
+
+div {
+  display: flex;
+}
+
+button {
+    border-radius: 16px;
+    font-size: 25px;
+    width: 30%;
+    color: $font-color;
+}
+
+img {
+    height: 2em;
+    margin: .5em;
+    justify-content: flex-end;
+}
+
+.highlight2 {
+  background: $highlight-color-2;
+}
