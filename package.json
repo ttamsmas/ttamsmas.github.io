@@ -16,7 +16,9 @@
     "serve": "browser-sync start --server --files 'index.html, assets/styles/main.css, assets/scripts/index.js'"
   },
   "main": "index.js",
-  "dependencies": {},
+  "dependencies": {
+    "bootstrap": "^4.5.3"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ttamsmas/ttamsmas_portfolio.git"

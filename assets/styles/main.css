@@ -1,35 +1,36 @@
 body {
-  background: #575757;
+  background: #1F243E;
   color: #FFFFFF;
   font-family: "Libre Franklin", sans-serif;
+  overflow: hidden;
 }
 
-#nav {
+nav {
   display: flex;
   justify-content: space-between;
-  background: #147297;
   align-items: center;
+  border-bottom: 2px solid #E84A62;
 }
 
 #projectheader {
-  color: #147297;
-  background: #FFFFFF;
+  color: #FFFFFF;
+  background: none;
   display: block;
 }
 
 h1 {
-  color: #000000;
+  color: #FFFFFF;
   font-family: "Shrikhand", cursive;
-  text-shadow: 2px 2px 1px #5895AD;
+  text-shadow: 2px 2px 1px #E84A62;
   padding: 0 0 0 3px;
 }
 
 h3 {
-  color: #000000;
-  background: #5895AD;
+  color: #384265;
+  background: #FFFFFF;
   border-radius: 30px;
   display: inline;
-  padding: 1px;
+  padding: 15px;
 }
 
 div {
@@ -41,16 +42,62 @@ button {
   font-size: 25px;
   width: 30%;
   color: #FFFFFF;
+  box-shadow: 3px 3px 2px #E84A62;
+  margin: 5px;
 }
 
-img {
+.linklogos {
   height: 2em;
   margin: 0.5em;
   justify-content: flex-end;
 }
 
+#git {
+  height: 2.75em;
+  margin: 0.25em 0.5em -0.75px -0.75px;
+  overflow: hidden;
+}
+
 .highlight2 {
-  background: #6DAEDD;
+  background: #22A9AC;
+}
+
+.flexbox {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+}
+
+.flexbox .col {
+  flex: 1;
+  align-items: center;
+  padding: 1px;
+  height: inherit;
+  overflow: hidden;
+}
+
+.flexbox .col:nth-child(1) {
+  order: 0;
+}
+
+.flexbox .col:nth-child(2) {
+  order: 1;
+}
+
+.flexbox .col:nth-child(3) {
+  order: 2;
+}
+
+.technologies {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.techicons {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
 }
 
 /*# sourceMappingURL=main.css.map */

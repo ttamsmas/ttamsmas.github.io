@@ -1,9 +1,9 @@
 $primary-font: 'Libre Franklin', sans-serif;
 $secondary-font:'Shrikhand', cursive;
-$primary-color: #575757;
-$secondary-color: #147297;
-$highlight-color-1: #5895AD;
-$highlight-color-2: #6DAEDD;
+$primary-color: #1F243E;
+$secondary-color: #384265;
+$highlight-color-1: #E84A62;
+$highlight-color-2: #22A9AC;
 $font-color: #FFFFFF;
 $font-dark: #000000;
 
@@ -11,34 +11,35 @@ body {
   background: $primary-color;
   color: $font-color;
   font-family: $primary-font;
+  overflow: hidden;
 }
 
-#nav {
+nav {
   display: flex;
   justify-content: space-between;
-  background: $secondary-color;
   align-items: center;
+  border-bottom: 2px solid $highlight-color-1;
 }
 
 #projectheader {
-  color: $secondary-color;
-  background: $font-color;
+  color: $font-color;
+  background: none;
   display: block;
 }
 
 h1 {
-  color: $font-dark;
+  color: $font-color;
   font-family: $secondary-font;
   text-shadow: 2px 2px 1px $highlight-color-1;
   padding: 0 0 0 3px;
 }
 
 h3 {
-  color: $font-dark;
-  background: $highlight-color-1;
+  color: $secondary-color;
+  background: #FFFFFF;
   border-radius: 30px;
   display: inline;
-  padding: 1px;
+  padding: 15px;
 }
 
 div {
@@ -50,14 +51,58 @@ button {
     font-size: 25px;
     width: 30%;
     color: $font-color;
+    box-shadow: 3px 3px 2px $highlight-color-1;
+    margin: 5px;
 }
 
-img {
+.linklogos {
     height: 2em;
     margin: .5em;
     justify-content: flex-end;
 }
 
+#git {
+  height: 2.75em;
+  margin: .25em .5em -.75px -.75px;
+  overflow: hidden;
+}
+
 .highlight2 {
   background: $highlight-color-2;
+}
+
+.flexbox {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+}
+
+.flexbox .col {
+  flex: 1;
+  align-items: center;
+  padding: 1px;
+  height: inherit;
+  overflow: hidden;
+}
+
+.flexbox .col:nth-child(1) {
+  order: 0;
+}
+.flexbox .col:nth-child(2) {
+  order: 1;
+}
+.flexbox .col:nth-child(3) {
+  order: 2;
+}
+
+.technologies {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.techicons {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
 }
