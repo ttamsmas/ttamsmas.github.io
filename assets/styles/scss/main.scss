@@ -11,20 +11,14 @@ body {
   background: $primary-color;
   color: $font-color;
   font-family: $primary-font;
-  overflow: hidden;
 }
 
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 2px solid $highlight-color-1;
-}
-
-#projectheader {
-  color: $font-color;
-  background: none;
-  display: block;
+  border-bottom: 4px solid $highlight-color-2;
+  background-color: $secondary-color;
 }
 
 h1 {
@@ -34,25 +28,24 @@ h1 {
   padding: 0 0 0 3px;
 }
 
+h5 {
+  margin-top: 10px;
+}
+
 h3 {
-  color: $secondary-color;
-  background: #FFFFFF;
-  border-radius: 30px;
+  color: $font-color;
+  background: $secondary-color;
+  border-radius: 0 30px 30px 0;
   display: inline;
-  padding: 15px;
+  padding: 10px 10px 5px 10px;
+  margin: 10px 40px 10px -15px;
+  border-right: 2px groove $highlight-color-2;
+  border-bottom: 4px groove $highlight-color-2;
+  font-family: $secondary-font;
 }
 
 div {
   display: flex;
-}
-
-button {
-    border-radius: 16px;
-    font-size: 25px;
-    width: 30%;
-    color: $font-color;
-    box-shadow: 3px 3px 2px $highlight-color-1;
-    margin: 5px;
 }
 
 .linklogos {
@@ -65,10 +58,6 @@ button {
   height: 2.75em;
   margin: .25em .5em -.75px -.75px;
   overflow: hidden;
-}
-
-.highlight2 {
-  background: $highlight-color-2;
 }
 
 .flexbox {
@@ -86,14 +75,9 @@ button {
   overflow: hidden;
 }
 
-.flexbox .col:nth-child(1) {
-  order: 0;
-}
-.flexbox .col:nth-child(2) {
-  order: 1;
-}
-.flexbox .col:nth-child(3) {
-  order: 2;
+.container-fluid {
+  flex-wrap: wrap;
+  display: flex;
 }
 
 .technologies {
@@ -105,4 +89,44 @@ button {
   display: flex;
   flex-direction: column-reverse;
   align-items: center;
+}
+
+.projects {
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.projectbubbles {
+  background: $highlight-color-1;
+  border-radius: 16px;
+  color: $font-color;
+  border: 5px groove $font-color;
+  padding: 5px;
+  width: 45%;
+  margin: 0 5px 5px 5px;
+}
+
+.speach {
+  background: $highlight-color-1;
+  border-radius: 16px;
+  color: $font-color;
+  border: 5px groove $font-color;
+  padding: 5px;
+}
+
+#tempsquare {
+  min-height: 500px;
+  max-height: 500px;
+}
+
+@media only screen and (min-width: 697px) {
+  .projectbubbles {
+    width: 22%;
+  }
+}
+
+@media only screen and (max-width: 697px) {
+  h5 {
+    font-size: 20px;
+  }
 }

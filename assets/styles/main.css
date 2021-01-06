@@ -2,20 +2,14 @@ body {
   background: #1F243E;
   color: #FFFFFF;
   font-family: "Libre Franklin", sans-serif;
-  overflow: hidden;
 }
 
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 2px solid #E84A62;
-}
-
-#projectheader {
-  color: #FFFFFF;
-  background: none;
-  display: block;
+  border-bottom: 4px solid #22A9AC;
+  background-color: #384265;
 }
 
 h1 {
@@ -25,25 +19,24 @@ h1 {
   padding: 0 0 0 3px;
 }
 
+h5 {
+  margin-top: 10px;
+}
+
 h3 {
-  color: #384265;
-  background: #FFFFFF;
-  border-radius: 30px;
+  color: #FFFFFF;
+  background: #384265;
+  border-radius: 0 30px 30px 0;
   display: inline;
-  padding: 15px;
+  padding: 10px 10px 5px 10px;
+  margin: 10px 40px 10px -15px;
+  border-right: 2px groove #22A9AC;
+  border-bottom: 4px groove #22A9AC;
+  font-family: "Shrikhand", cursive;
 }
 
 div {
   display: flex;
-}
-
-button {
-  border-radius: 16px;
-  font-size: 25px;
-  width: 30%;
-  color: #FFFFFF;
-  box-shadow: 3px 3px 2px #E84A62;
-  margin: 5px;
 }
 
 .linklogos {
@@ -56,10 +49,6 @@ button {
   height: 2.75em;
   margin: 0.25em 0.5em -0.75px -0.75px;
   overflow: hidden;
-}
-
-.highlight2 {
-  background: #22A9AC;
 }
 
 .flexbox {
@@ -77,16 +66,9 @@ button {
   overflow: hidden;
 }
 
-.flexbox .col:nth-child(1) {
-  order: 0;
-}
-
-.flexbox .col:nth-child(2) {
-  order: 1;
-}
-
-.flexbox .col:nth-child(3) {
-  order: 2;
+.container-fluid {
+  flex-wrap: wrap;
+  display: flex;
 }
 
 .technologies {
@@ -98,6 +80,45 @@ button {
   display: flex;
   flex-direction: column-reverse;
   align-items: center;
+}
+
+.projects {
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.projectbubbles {
+  background: #E84A62;
+  border-radius: 16px;
+  color: #FFFFFF;
+  border: 5px groove #FFFFFF;
+  padding: 5px;
+  width: 45%;
+  margin: 0 5px 5px 5px;
+}
+
+.speach {
+  background: #E84A62;
+  border-radius: 16px;
+  color: #FFFFFF;
+  border: 5px groove #FFFFFF;
+  padding: 5px;
+}
+
+#tempsquare {
+  min-height: 500px;
+  max-height: 500px;
+}
+
+@media only screen and (min-width: 697px) {
+  .projectbubbles {
+    width: 22%;
+  }
+}
+@media only screen and (max-width: 697px) {
+  h5 {
+    font-size: 20px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
