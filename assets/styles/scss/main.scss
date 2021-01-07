@@ -40,12 +40,15 @@ h3 {
   padding: 10px 10px 5px 10px;
   margin: 10px 40px 10px -15px;
   border-right: 2px groove $highlight-color-2;
+  border-left: 2px groove $highlight-color-2;
+  border-top: 2px groove $highlight-color-2;
   border-bottom: 4px groove $highlight-color-2;
   font-family: $secondary-font;
+  text-shadow: 2px 2px 1px $highlight-color-1;
 }
 
-div {
-  display: flex;
+h6 {
+  text-align: center;
 }
 
 .linklogos {
@@ -94,6 +97,7 @@ div {
 .projects {
   flex-direction: row;
   flex-wrap: wrap;
+  display: flex;
 }
 
 .projectbubbles {
@@ -102,21 +106,27 @@ div {
   color: $font-color;
   border: 5px groove $font-color;
   padding: 5px;
-  width: 45%;
-  margin: 0 5px 5px 5px;
+  margin: 0 auto;
+  align-content: space-around;
 }
 
 .speach {
-  background: $highlight-color-1;
+  background: $highlight-color-2;
   border-radius: 16px;
   color: $font-color;
-  border: 5px groove $font-color;
+  border: 1px groove $font-color;
   padding: 5px;
 }
 
-#tempsquare {
+.tempsquare {
   min-height: 500px;
   max-height: 500px;
+  flex-direction: column;
+}
+
+.collapse, .card {
+  background-color: transparent;
+  flex-direction: row;
 }
 
 @media only screen and (min-width: 697px) {

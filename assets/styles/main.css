@@ -31,12 +31,15 @@ h3 {
   padding: 10px 10px 5px 10px;
   margin: 10px 40px 10px -15px;
   border-right: 2px groove #22A9AC;
+  border-left: 2px groove #22A9AC;
+  border-top: 2px groove #22A9AC;
   border-bottom: 4px groove #22A9AC;
   font-family: "Shrikhand", cursive;
+  text-shadow: 2px 2px 1px #E84A62;
 }
 
-div {
-  display: flex;
+h6 {
+  text-align: center;
 }
 
 .linklogos {
@@ -85,6 +88,7 @@ div {
 .projects {
   flex-direction: row;
   flex-wrap: wrap;
+  display: flex;
 }
 
 .projectbubbles {
@@ -93,21 +97,27 @@ div {
   color: #FFFFFF;
   border: 5px groove #FFFFFF;
   padding: 5px;
-  width: 45%;
-  margin: 0 5px 5px 5px;
+  margin: 0 auto;
+  align-content: space-around;
 }
 
 .speach {
-  background: #E84A62;
+  background: #22A9AC;
   border-radius: 16px;
   color: #FFFFFF;
-  border: 5px groove #FFFFFF;
+  border: 1px groove #FFFFFF;
   padding: 5px;
 }
 
-#tempsquare {
+.tempsquare {
   min-height: 500px;
   max-height: 500px;
+  flex-direction: column;
+}
+
+.collapse, .card {
+  background-color: transparent;
+  flex-direction: row;
 }
 
 @media only screen and (min-width: 697px) {
