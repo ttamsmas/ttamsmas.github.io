@@ -12,7 +12,7 @@ nav {
   background-color: #384265;
 }
 
-h1 {
+h2 {
   color: #FFFFFF;
   font-family: "Shrikhand", cursive;
   text-shadow: 2px 2px 1px #E84A62;
@@ -20,20 +20,11 @@ h1 {
 }
 
 h5 {
-  margin-top: 10px;
-}
-
-h3 {
   color: #FFFFFF;
   background: #384265;
-  border-radius: 0 30px 30px 0;
   display: inline;
   padding: 10px 10px 5px 10px;
   margin: 10px 40px 10px -15px;
-  border-right: 2px groove #22A9AC;
-  border-left: 2px groove #22A9AC;
-  border-top: 2px groove #22A9AC;
-  border-bottom: 4px groove #22A9AC;
   font-family: "Shrikhand", cursive;
   text-shadow: 2px 2px 1px #E84A62;
 }
@@ -43,13 +34,13 @@ h6 {
 }
 
 .linklogos {
-  height: 2em;
+  height: 1em;
   margin: 0.5em;
   justify-content: flex-end;
 }
 
 #git {
-  height: 2.75em;
+  height: 2em;
   margin: 0.25em 0.5em -0.75px -0.75px;
   overflow: hidden;
 }
@@ -118,6 +109,12 @@ h6 {
 .collapse, .card {
   background-color: transparent;
   flex-direction: row;
+  flex-wrap: wrap;
+  border: none;
+}
+
+.firstsection {
+  padding-top: 75px;
 }
 
 @media only screen and (min-width: 697px) {
