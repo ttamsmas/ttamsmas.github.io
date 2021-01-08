@@ -109,17 +109,10 @@ h6 {
 }
 
 .speach {
-  background: $highlight-color-2;
-  border-radius: 16px;
-  color: $font-color;
-  border: 1px groove $font-color;
-  padding: 5px;
-}
-
-.tempsquare {
-  min-height: 500px;
-  max-height: 500px;
+  align-self: center;
+  display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .collapse, .card {
@@ -141,6 +134,7 @@ h6 {
   display: flex;
   flex-wrap: nowrap;
   align-items: flex-start;
+  align-content: space-between;
 }
 
 @media only screen and (min-width: 697px) {
