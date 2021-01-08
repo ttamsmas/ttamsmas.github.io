@@ -15,6 +15,7 @@
 </head>
 
 <body>
+<!-- Navigation Bar -->
   <nav class="navbar navbar-sm fixed-top navbar-dark">
     <div id='navright'>
       <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#about" aria-expanded="false" aria-controls="collapseExample">
@@ -47,37 +48,41 @@
   </nav>
   <div id='banner'>
   </div>
+
+<!-- Landing Page -->
   <div class="container-fluid">
     <p class="col-2 firstsection">
     </p>
     <div class="container col-12">
-      <img id="headshot" src="assets/pictures/matty.jpeg" alt='Matt Headshot' />
+      <img id="headshot" class="col-6" src="assets/pictures/headshot.png" alt='Matt Headshot' />
       <div class='col-6'>
         <div id="carouselExampleFade" class="col carousel slide carousel-fade" data-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <div class="d-block w-100 speach">
-                <h6>Follow me on LinkedIn to know what I am currently working on via the icon in the top right</h6>
-                <img class="linklogos" src="assets/pictures/linkedin.png" alt='linkedin' />
+              <div class="d-block w-100 projectbubbles">
+                <h6>Follow me on LinkedIn to know what I am currently working on</h6>
+                <a href="https://www.linkedin.com/in/matthewsams/">
+                  <img class="largelinklogos" src="assets/pictures/linkedin.png" alt='linkedin' />
+                </a>
               </div>
             </div>
             <div class="carousel-item">
-              <div class="d-block w-100 speach">
+              <div class="d-block w-100 projectbubbles">
                 <h6>I am looking for roles as a Software Engineer that may develop my skill set.</h6>
               </div>
             </div>
             <div class="carousel-item">
-              <div class="d-block w-100 speach">
+              <div class="d-block w-100 projectbubbles">
                 <h6>Before studing Software Engineering I worked in manufacturing and retail supply chain management as an analyst and people manager. Checkout my Resume for more information or my LinkedIn for my full background.</h6>
               </div>
             </div>
             <div class="carousel-item">
-              <div class="d-block w-100 speach">
+              <div class="d-block w-100 projectbubbles">
                 <h6>I am looking for roles as a Software Engineer that may develop my skill set.</h6>
               </div>
             </div>
             <div class="carousel-item">
-              <div class="d-block w-100 speach">
+              <div class="d-block w-100 projectbubbles">
                 <h6>I am looking for roles as a Software Engineer that may develop my skill set.</h6>
               </div>
             </div>
@@ -91,28 +96,46 @@
             </a>
           </div>
         </div>
+
+        <!-- Resume -->
+        <p class="col-12 firstsection">
+        </p>
+        <a href="assets/pictures/Resume.pdf">
+          <div class="collapse" id="resume">
+            <div class="card card-body">
+              <div class="projectbubbles resumebox col-8" class="tempsquare">
+                <h6>Click here to open resume as a PDF</h6>
+                <img class="col-12" src="https://i.imgur.com/G0d1NKu.png" alt="link to PDF Resume" />
+              </div>
+            </div>
+          </div>
+        </a>
       </div>
     </div>
 
-
-    <div class="collapse col-12" id="about">
+<!-- About Me -->
+    <div class="collapse col-12 container" id="about">
     <div class="card card-body">
       <div class="col-6">
       </div>
-      <div class="flexbox col-12">
-        <div class="col">
-          <img class="col" src="https://i.imgur.com/02vDq1b.jpg" id="plant" alt="Indoor Garden Image" />
+
+<!-- Gardening -->
+      <div class="col-12 container">
+        <div class="col-6">
+          <img class="col-12" src="https://i.imgur.com/02vDq1b.jpg" alt="Indoor Garden Image" />
         </div>
-        <div class="speach col-6 tempsquare">
+        <div class="projectbubbles col-6">
           <div class=".col-6 .col-xs-3">
             <h6>I am a major gardner</h6>
           </div>
         </div>
       </div>
-      <div class="flexbox col-12">
-        <div class="speach col-6 tempsquare">
+
+<!-- Hometown -->
+      <div class="col-12 container">
+        <div class="projectbubbles col-6">
           <h6>I live in San Francisco, checkout my Instagram.</h6>
-          <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="104" height="104" viewBox="0 0 172 172" style=" fill:#000000;">
+          <svg class="largelinklogos" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="104" height="104" viewBox="0 0 172 172" style=" fill:#000000;">
             <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none"
               text-anchor="none" style="mix-blend-mode: normal">
               <path d="M0,172v-172h172v172z" fill="none">
@@ -155,17 +178,6 @@
             <span class="sr-only">Next</span>
           </a>
         </div>
-      </div>
-    </div>
-  </div>
-
-  <p class="col-2 firstsection">
-  </p>
-  <div class="collapse" id="resume">
-    <div class="card card-body">
-      <div class="speach resumebox col-3" class="tempsquare">
-        <h6>Click here to open resume as a PDF</h6>
-        <img class="col-12" src="https://i.imgur.com/G0d1NKu.png" alt="link to PDF Resume" />
       </div>
     </div>
   </div>

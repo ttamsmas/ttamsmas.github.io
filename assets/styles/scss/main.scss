@@ -48,6 +48,11 @@ h6 {
     justify-content: flex-end;
 }
 
+.largelinklogos {
+  height: 2em;
+  margin: .5em;
+}
+
 #git {
   height: 2em;
   margin: .25em .5em -.75px -.75px;
@@ -68,6 +73,7 @@ h6 {
   height: inherit;
   overflow: hidden;
 }
+
 
 .container-fluid {
   flex-wrap: wrap;
@@ -125,7 +131,7 @@ h6 {
 
 #headshot {
   flex-direction: row-reverse;
-  max-height: 50em;
+  box-shadow: 25px 25px 50px 0 $primary-color; 
 }
 
 .firstsection {
