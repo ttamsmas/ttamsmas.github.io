@@ -1,42 +1,32 @@
-$primary-font: 'Libre Franklin', sans-serif;
-$secondary-font:'Shrikhand', cursive;
-$primary-color: #1F243E;
-$secondary-color: #384265;
-$highlight-color-1: #E84A62;
-$highlight-color-2: #22A9AC;
-$font-color: #FFFFFF;
-$font-dark: #000000;
-
 body {
-  background: $primary-color;
-  color: $font-color;
-  font-family: $primary-font;
+  background: #1F243E;
+  color: #FFFFFF;
+  font-family: "Libre Franklin", sans-serif;
 }
-
 
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 4px solid $highlight-color-2;
-  background-color: $secondary-color;
+  border-bottom: 4px solid #22A9AC;
+  background-color: #384265;
 }
 
 h2 {
-  color: $font-color;
-  font-family: $secondary-font;
-  text-shadow: 2px 2px 1px $highlight-color-1;
+  color: #FFFFFF;
+  font-family: "Shrikhand", cursive;
+  text-shadow: 2px 2px 1px #E84A62;
   padding: 0 0 0 3px;
 }
 
 h5 {
-  color: $font-color;
-  background: $secondary-color;
+  color: #FFFFFF;
+  background: #384265;
   display: inline;
   padding: 10px 10px 5px 10px;
   margin: 10px 40px 10px -15px;
-  font-family: $secondary-font;
-  text-shadow: 2px 2px 1px $highlight-color-1;
+  font-family: "Shrikhand", cursive;
+  text-shadow: 2px 2px 1px #E84A62;
 }
 
 h6 {
@@ -44,19 +34,19 @@ h6 {
 }
 
 .linklogos {
-    height: 1em;
-    margin: .5em;
-    justify-content: flex-end;
+  height: 1em;
+  margin: 0.5em;
+  justify-content: flex-end;
 }
 
 .largelinklogos {
   height: 2em;
-  margin: .5em;
+  margin: 0.5em;
 }
 
 #git {
   height: 2em;
-  margin: .25em .5em -.75px -.75px;
+  margin: 0.25em 0.5em -0.75px -0.75px;
   overflow: hidden;
 }
 
@@ -74,7 +64,6 @@ h6 {
   height: inherit;
   overflow: hidden;
 }
-
 
 .container-fluid {
   flex-wrap: wrap;
@@ -100,10 +89,10 @@ h6 {
 }
 
 .projectbubbles {
-  background: $highlight-color-1;
+  background: #E84A62;
   border-radius: 16px;
-  color: $font-color;
-  border: 5px groove $font-color;
+  color: #FFFFFF;
+  border: 5px groove #FFFFFF;
   padding: 5px;
   margin: 0 auto;
   align-content: space-around;
@@ -138,9 +127,10 @@ h6 {
   align-content: space-between;
 }
 
-a {
-  color: $font-color;
-  text-decoration: underline;
+a, a:link, a:visited {
+  color: #FFFAFA;
+  text-decoration: none;
+  background-color: #778899;
 }
 
 @media only screen and (min-width: 697px) {
@@ -148,9 +138,10 @@ a {
     width: 22%;
   }
 }
-
 @media only screen and (max-width: 697px) {
   h5 {
     font-size: 20px;
   }
 }
+
+/*# sourceMappingURL=main.css.map */
