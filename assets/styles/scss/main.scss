@@ -1,5 +1,5 @@
 $primary-font: 'Libre Franklin', sans-serif;
-$secondary-font:'Shrikhand', cursive;
+$secondary-font: 'Shrikhand', cursive;
 $primary-color: #1F243E;
 $secondary-color: #384265;
 $highlight-color-1: #E84A62;
@@ -12,7 +12,6 @@ body {
   color: $font-color;
   font-family: $primary-font;
 }
-
 
 nav {
   display: flex;
@@ -44,18 +43,18 @@ h6 {
 }
 
 .linklogos {
-    height: 1em;
-    margin: .5em;
+  height: 1em;
+  margin: 0.5em;
 }
 
 .largelinklogos {
   height: 2em;
-  margin: .5em;
+  margin: 0.5em;
 }
 
 #git {
   height: 2em;
-  margin: .25em .5em -.75px -.75px;
+  margin: 0.25em 0.5em -.75px -.75px;
   overflow: hidden;
 }
 
@@ -73,7 +72,6 @@ h6 {
   height: inherit;
   overflow: hidden;
 }
-
 
 .container-fluid {
   flex-wrap: wrap;
@@ -115,7 +113,8 @@ h6 {
   align-items: center;
 }
 
-.collapse, .card {
+.card,
+.collapse {
   background-color: transparent;
   flex-direction: row;
   flex-wrap: wrap;
@@ -148,8 +147,8 @@ h6 {
   flex-wrap: nowrap;
 }
 
-
-.dropdown, .dropdown-toggle {
+.dropdown,
+.dropdown-toggle {
   display: none;
 }
 
@@ -157,40 +156,36 @@ a {
   color: $font-color;
   text-decoration: underline;
 }
-
 @media only screen and (min-width: 697px) {
   .projectbubbles {
     width: 22%;
   }
 }
-
 @media only screen and (max-width: 1150px) {
   .firstsection {
     padding-top: 100px;
   }
+
   img {
     display: block;
   }
 }
-
-
 @media only screen and (max-width: 697px) {
-  h5 {
-    font-size: 20px;
+  .largeNav {
+    display: none;
   }
-.largeNav {
-  display: none;
-}
-.dropdown, .dropdown-toggle {
-  display: flex;
-}
 
-.collapse {
-  flex-direction: column;
-}
+  .dropdown,
+  .dropdown-toggle {
+    display: flex;
+  }
+
+  .collapse {
+    flex-direction: column;
+  }
 
   .firstsection {
-    padding-top: 50px;
+    padding-top: 40px;
   }
 
   .largelinklogos {
