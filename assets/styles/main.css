@@ -124,7 +124,7 @@ h6 {
 
 .container {
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   align-items: flex-start;
   align-content: space-between;
 }
@@ -151,7 +151,11 @@ a {
 }
 @media only screen and (max-width: 1150px) {
   .firstsection {
-    padding-top: 110px;
+    padding-top: 100px;
+  }
+
+  img {
+    display: block;
   }
 }
 @media only screen and (max-width: 697px) {
@@ -167,8 +171,12 @@ a {
     display: flex;
   }
 
+  .collapse {
+    flex-direction: column;
+  }
+
   .firstsection {
-    padding-top: 130px;
+    padding-top: 50px;
   }
 
   .largelinklogos {
