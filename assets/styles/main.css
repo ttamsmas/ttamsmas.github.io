@@ -23,8 +23,6 @@ h5 {
   color: #FFFFFF;
   background: #384265;
   display: inline;
-  padding: 10px 10px 5px 10px;
-  margin: 10px 40px 10px -15px;
   font-family: "Shrikhand", cursive;
   text-shadow: 2px 2px 1px #E84A62;
 }
@@ -36,7 +34,6 @@ h6 {
 .linklogos {
   height: 1em;
   margin: 0.5em;
-  justify-content: flex-end;
 }
 
 .largelinklogos {
@@ -120,11 +117,26 @@ h6 {
   padding-top: 75px;
 }
 
+.buttonAbout {
+  color: #000000;
+  background: #22A9AC;
+}
+
 .container {
   display: flex;
   flex-wrap: nowrap;
   align-items: flex-start;
   align-content: space-between;
+}
+
+.navbar {
+  display: flex;
+  flex-flow: row;
+  flex-wrap: nowrap;
+}
+
+.dropdown, .dropdown-toggle {
+  display: none;
 }
 
 a {
@@ -137,13 +149,26 @@ a {
     width: 22%;
   }
 }
+@media only screen and (max-width: 1150px) {
+  .firstsection {
+    padding-top: 110px;
+  }
+}
 @media only screen and (max-width: 697px) {
   h5 {
     font-size: 20px;
   }
 
+  .largeNav {
+    display: none;
+  }
+
+  .dropdown, .dropdown-toggle {
+    display: flex;
+  }
+
   .firstsection {
-    padding-top: 125px;
+    padding-top: 130px;
   }
 
   .largelinklogos {
