@@ -6,6 +6,7 @@ const resume = function() {
 }
 const about = function() {
   $("#about").collapse("hide")
+  $("#buttonAbout").collapse("hide")
 }
 const projects = function() {
   $("#projects").collapse("hide")
@@ -27,6 +28,27 @@ $(() => {
     tech()
   })
   $("#buttonResume").click(function() {
+    projects()
+    about()
+    tech()
+  })
+
+  $("#dropdownButtonAbout").click(function() {
+    resume()
+    projects()
+    tech()
+  })
+  $("#dropdownButtonTech").click(function() {
+    resume()
+    about()
+    projects()
+  })
+  $("#dropdownButtonProjects").click(function() {
+    resume()
+    about()
+    tech()
+  })
+  $("#dropdownButtonResume").click(function() {
     projects()
     about()
     tech()
